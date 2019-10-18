@@ -175,3 +175,18 @@ a:hover, a:focus, a:active {
   background-color: #910000 !important;
   border-color: #910000 !important;
 }
+.project .img-project {
+  max-width: 20rem;
+  max-height: 20rem;
+  border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  background-color: #343a40;
+}
+.project-link {
+  color: #d1d1d1 !important;
+}
+.project-link:hover {
+  color: #a09f9f !important; 
+}
+a:hover {
+  text-decoration: none;
+}
