@@ -181,12 +181,10 @@ a:hover, a:focus, a:active {
   border: 0.5rem solid rgba(255, 255, 255, 0.2);
   background-color: #343a40;
 }
-.project-link {
-  color: #d1d1d1 !important;
-}
-.project-link:hover {
-  color: #a09f9f !important; 
+a{
+  color: #d1d1d1;
 }
 a:hover {
+  color: #a09f9f; 
   text-decoration: none;
 }
