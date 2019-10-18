@@ -16,44 +16,40 @@
   <link href="css/resume.css" rel="stylesheet">
 </head>
 <body id="page-top">
+
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <div class="navbar-brand">
       <span class="d-block d-lg-none">Jordan Maxwell</span>
       <span class="d-none d-lg-block">
-        <div class="mx-auto mb-2">Jordan Maxwell</div>
+        <img class="img-fluid img-profile mx-auto mb-2" src="https://avatars2.githubusercontent.com/u/2001527?s=460&v=4" alt="">
+        <div class="mx-auto">Jordan Maxwell</div>
+        <small class="mx-auto mb-2">thetestgame</small>
       </span>
-    </a>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-        </li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
+
+  <!-- Home -->
   <div class="container-fluid p-0">
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
         <h1 class="mb-0">Jordan Maxwell</h1>
-        <p class="lead mb-5"></p>
+        <div class="subheading mb-4">thetestgame</div>
+        <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eros nibh, ornare nec interdum a, iaculis quis felis. Vestibulum quis ipsum non magna bibendum eleifend. Cras posuere ligula nec metus lacinia rhoncus. Morbi nec molestie justo. Sed sagittis lorem felis, rhoncus pretium felis egestas vel. Vestibulum a lacinia dolor, vel fringilla arcu. Donec cursus nec mi et cursus.</p>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/jordan-maxwell-828659a2/"><i class="fab fa-linkedin-in"></i></a>
           <a href="https://github.com/thetestgame"><i class="fab fa-github"></i></a>
@@ -61,6 +57,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Experience -->
     <hr class="m-0">
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
       <div class="w-100">
@@ -103,6 +101,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Education -->
     <hr class="m-0">
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
       <div class="w-100">
@@ -130,6 +130,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Skills -->
     <hr class="m-0">
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
@@ -176,18 +178,77 @@
         </ul>       
       </div>
     </section>
+
+    <!-- Interests -->
     <hr class="m-0">
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
         <h2 class="mb-5">Interests</h2>
       </div>
     </section>
+
+    <!-- Projects -->
     <hr class="m-0">
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
       <div class="w-100">
         <h2 class="mb-5">Projects</h2>
       </div>
     </section>
+
+    <!-- Contact -->
+    <hr class="m-0">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="contact">
+      <div class="w-100">
+        <h2 class="mb-5">Contact</h2>
+        <div class="subheading mb-3">Do you have any questions? Please do not hesitate to contact me. I will reply as soon as I can.</div>
+
+        <!-- Contact Form-->
+        <form id="contact-form" name="contact-form" action="#" method="POST">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                        <input type="text" id="name" name="name" class="form-control">
+                        <label for="name" class="">Your name</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                        <input type="text" id="email" name="email" class="form-control">
+                        <label for="email" class="">Your email</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="md-form mb-0">
+                        <input type="text" id="subject" name="subject" class="form-control">
+                        <label for="subject" class="">Subject</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="md-form">
+                        <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea"></textarea>
+                        <label for="message">Your message</label>
+                    </div>
+                </div>
+            </div>
+            <!--Grid row-->
+
+        </form>
+
+        <div class="text-center text-md-left">
+            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+        </div>
+        <div class="status"></div>
+    </div>
+      </div>
+    </section>
+  </div>
+</section>
+<!--Section: Contact v.2-->
   </div>
 
   <!-- Javascript -->

@@ -112,6 +112,7 @@ p.lead {
       max-width: 10rem;
       max-height: 10rem;
       border: 0.5rem solid rgba(255, 255, 255, 0.2);
+      background-color: #343a40;
  }
   #sideNav .navbar-collapse {
       display: flex;
@@ -164,4 +165,13 @@ a {
 }
 a:hover, a:focus, a:active {
   color: #824027;
+}
+.btn-primary {
+  background-color: #d40d0d !important;
+  border-color: #d40d0d !important;
+  color: #ffffff !important;
+}
+.btn-primary:hover {
+  background-color: #910000 !important;
+  border-color: #910000 !important;
 }
