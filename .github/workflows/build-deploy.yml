@@ -1,3 +1,7 @@
+# This workflow automatically builds the Github Pages website and deploys it to the release branch
+# for distribution. During this process it also performs secondary publishing steps required such
+# as clearing the Cloudflare cache to reflect changes immediately.
+
 name: Build/Deploy Website
 on:
   push:
@@ -23,3 +27,10 @@ jobs:
           build_dir: .
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      # Clears the Cloudflare zone's cache via the Cloudflare API
+      - name: Purge cache
+        uses: jakejarvis/cloudflare-purge-action@master
+        env:
+          CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
+          CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
