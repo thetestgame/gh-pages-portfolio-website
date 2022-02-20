@@ -5,8 +5,9 @@
 
 <body class="h-100 d-flex flex-column">
 
-    <main class="flex-shrink-0 container mt-5">
-        {% include navbar.html %} {{ content }}
+    <main class="container-fluid">
+        {% include navbar.html %} 
+        {{ content }}
     </main>
 
     {% include footer.html %} {% include analytics.html %} {% include scripts.html %}
