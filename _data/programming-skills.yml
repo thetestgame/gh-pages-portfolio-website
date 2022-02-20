@@ -1,0 +1,55 @@
+- name: C#
+  percentage: 70
+  color: warning
+
+- name: Python
+  percentage: 90
+  color: success
+
+- name: Cython
+  percentage: 80
+  color: primary
+
+- name: Java
+  percentage: 60
+  color: warning
+
+- name: PHP
+  percentage: 50
+  color: warning
+
+- name: Lua
+  percentage: 80
+  color: primary
+
+- name: SQL
+  percentage: 70
+  color: warning
+
+- name: C++
+  percentage: 65
+  color: warning
+
+- name: C
+  percentage: 50
+  color: warning
+
+- name: HTML5/CSS3
+  percentage: 90
+  color: success
+
+- name: Visual Base
+  percentage: 50
+  color: warning
+
+- name: GLSL
+  percentage: 70
+  color: warning
+
+- name: Groovy
+  percentage: 40
+  color: danger
+
+- name: Processing
+  percentage: 40
+  color: danger
