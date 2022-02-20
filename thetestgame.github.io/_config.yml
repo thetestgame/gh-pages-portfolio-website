@@ -1,0 +1,90 @@
+### Site Settings ###
+title               : Jordan Maxwell
+description         : >-
+                      Your general overall nerdy game developer. Powered by coffee.
+baseurl             : ""
+repository          : thetestgame/thetestgame.github.io 
+remote_theme        : YoussefRaafatNasry/portfolYOU
+open_new_tab        : false
+
+
+### Plugins ###
+plugins:
+  - jemoji
+
+
+### Navbar Settings ###
+nav_exclude:                                            # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
+
+
+### Author Info ###
+author:
+  name              : Jordan Maxwell
+  image             : https://avatars.githubusercontent.com/u/2001527?v=4
+# behance           : thetestgame
+# dribbble          : thetestgame
+  email             : nxtlabs13@gmail.com
+#  facebook         : thetestgame
+  github            : thetestgame
+  gitlab            : thetestgame
+# instagram         : thetestgame
+# kaggle            : thetestgame
+  linkedin          : thetestgame
+# medium            : thetestgame
+# soundcloud        : thetestgame
+# spotify           : thetestgame
+# stackoverflow     : your_user_id
+# tumblr            : thetestgame.tumblr.com
+  twitch            : thetestgame
+  twitter           : thetestgame2
+# vimeo             : thetestgame
+  youtube           : UCe3YxaTrVk25oaO1mFSs2cw
+# keybase           : thetestgame
+
+
+### Posts ###
+permalink: /blog/:title
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+
+### Disqus ###
+disqus:
+  shortname: your-short-name-disqus                     # Your website Shortname on disqus
+
+
+### Analytics ###
+analytics:
+  enabled: false                                        # Set true to enable analytics
+  google:
+    tracking_id: your-google-tracking-id
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  #- scope:
+  #    path: ""
+  #    type: "posts"
+  #  values:
+  #    comments: false                                   # Set to true to enable disqus comments
+
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"
