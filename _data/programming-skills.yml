@@ -38,7 +38,7 @@
   percentage: 90
   color: success
 
-- name: Visual Base
+- name: Visual Basic
   percentage: 50
   color: warning
 
