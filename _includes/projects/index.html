@@ -1,4 +1,13 @@
+<h1>My Projects</h1>
 
+<!-- Card Search -->
+<div class="row py-2">
+  <div class="col-sm-4">
+    <input type="search" placeholder="Filter projects by title, tag, ect..." name="search" class="form-control searchbox-input text-light" required="">
+  </div>
+</div>
+
+<!-- Projects -->
 <div class="card-columns m-3 mt-5">
 
   <!-- Remote Projects -->
@@ -57,3 +66,14 @@
   {% endfor %}
 
 </div>
+
+<script>
+$(document).ready(function(){
+  $('.searchbox-input').on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $(".card").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
