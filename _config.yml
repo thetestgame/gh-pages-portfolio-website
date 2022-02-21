@@ -53,7 +53,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:name
-
+  games:
+    output: true
+    permalink: /games/:name
 
 ### Disqus ###
 disqus:
@@ -74,11 +76,11 @@ defaults:
       type: "projects"
     values:
       layout: "page"
-  #- scope:
-  #    path: ""
-  #    type: "posts"
-  #  values:
-  #    comments: false                                   # Set to true to enable disqus comments
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: false                                   # Set to true to enable disqus comments
 
 
 ### Exclude from processing ###

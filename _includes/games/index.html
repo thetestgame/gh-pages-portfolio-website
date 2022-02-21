@@ -1,0 +1,44 @@
+<h1>My Games</h1>
+
+<!-- Card Search -->
+<div class="row py-2">
+  <div class="col-sm-4">
+    <input type="search" placeholder="Filter games by title, tag, ect..." name="search" class="form-control searchbox-input text-light" required="">
+  </div>
+</div>
+
+<!-- Projects -->
+<div class="card-columns m-3 mt-5">
+  {% for project in site.games %}
+
+    {%- assign project_type  = "local" -%}
+    {%- assign project_id    = project.name | slugify -%}
+    {%- assign project_img   = project.image -%}
+    {%- assign project_name  = project.name -%}
+    {%- assign project_desc  = project.description -%}
+    {%- assign project_tools = project.tools -%}
+
+    {%- if project.external_url -%}
+      {%- assign project_url = project.external_url -%}
+      {%- assign external    = true -%}
+    {%- else -%}
+      {%- assign project_url = project.url | relative_url -%}
+      {%- assign external    = false -%}
+    {%- endif -%}
+
+    {% include projects/project-card.html %}
+
+  {% endfor %}
+
+</div>
+
+<script>
+$(document).ready(function(){
+  $('.searchbox-input').on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $(".card").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>

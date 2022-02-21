@@ -3,5 +3,9 @@
   {% for post in site.posts %}
     {% include blog/post-card.html %}
   {% endfor %}
+
+  {% if site.posts.size == 0 %}
+    <h2>There are currently no posts. Check back later for new content!</h2>
+  {% endif %}
   
 </div>
