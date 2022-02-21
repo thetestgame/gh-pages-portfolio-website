@@ -1,0 +1,35 @@
+- name: Web Development
+  percentage: 95
+  color: success
+
+- name: Software Development
+  percentage: 90
+  color: success
+
+- name: Data Visualization Development
+  percentage: 90
+  color: success
+
+- name: Object-Oriented Programming (OOP)
+  percentage: 90
+  color: success
+
+- name: Web Applications
+  percentage: 90
+  color: success
+
+- name: Web Services
+  percentage: 90
+  color: success
+
+- name: Game Development
+  percentage: 90
+  color: success
+
+- name: Test Automation
+  percentage: 90
+  color: success
+
+- name: Troubleshooting
+  percentage: 90
+  color: success
