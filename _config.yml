@@ -95,3 +95,4 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
+  - Dockerfile
