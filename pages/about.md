@@ -17,10 +17,10 @@ weight: 3
         <!--{% include about/skills.html title="Other Skills" source=site.data.other-skills %}-->
     </div>
     <div class="col">
-        <h2>Work History</h2>
+        <h2>Recent Work History</h2>
         {% include about/work-timeline.html %}
 
-        <h2>Volunteer History</h2>
+        <h2>Recent Volunteer History</h2>
         {% include about/volunteer-timeline.html %}
     </div>
 </div>
