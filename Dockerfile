@@ -14,6 +14,10 @@ RUN apt-get install -y python-pip python-dev ruby-full build-essential
 RUN pip install --upgrade pip
 RUN apt-get install -y vim
 
+# Copy oure website into the container to operate on it
+COPY . /website
+WORKDIR /website
+
 # Install jekyll and run build
 RUN gem install jekyll bundler
 RUN bundler exec jekyll build
