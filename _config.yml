@@ -57,6 +57,9 @@ collections:
   games:
     output: true
     permalink: /games/:name
+  mods:
+    output: true
+    permalink: /mods/:name
 
 ### Disqus ###
 disqus:
@@ -80,6 +83,11 @@ defaults:
   - scope:
       path: ""
       type: "games"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "mods"
     values:
       layout: "page"
   - scope:
