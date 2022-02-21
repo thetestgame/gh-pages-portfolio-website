@@ -1,15 +1,16 @@
 ---
-name: Create new website post
-about: Use this template to create a new website post
-title: "[YEAR]-[MONTH]-[DAY]-[post file name without spaces].md"
+name: Create new website mod
+about: Use this template to create a new website mod
+title: "[mod file name without spaces].md"
 ---
 [REMOVE_THIS_STRING]---
-title:  "Post title"
-tags: [tag1,tag2]
-style: fill
-color: warning
+name:  "Mod name"
+tools: [tool1]
 description: "Description"
-external_url: "External Link"
+publisher: "Publisher"
+platforms: [platform1,platform2]
+game: "Game the mod is for"
+hidden: false
 [REMOVE_THIS_STRING]---
 
 ## Example syntax highlight

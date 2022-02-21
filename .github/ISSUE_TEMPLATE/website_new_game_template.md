@@ -1,15 +1,15 @@
 ---
-name: Create new website post
-about: Use this template to create a new website post
-title: "[YEAR]-[MONTH]-[DAY]-[post file name without spaces].md"
+name: Create new website game
+about: Use this template to create a new website game
+title: "[game file name without spaces].md"
 ---
 [REMOVE_THIS_STRING]---
-title:  "Post title"
-tags: [tag1,tag2]
-style: fill
-color: warning
+name:  "Game name"
+tools: [tool1]
 description: "Description"
-external_url: "External Link"
+publisher: "Publisher"
+platforms: [platform1,platform2]
+hidden: false
 [REMOVE_THIS_STRING]---
 
 ## Example syntax highlight
