@@ -6,15 +6,20 @@
     <div class="card-body">
       <h5 id="{{ game_id }}-name" class="card-title">{{ game_name }}</h5>
       <p id="{{ game_id }}-desc" class="card-text">{{ game_desc }}</p>
-      <p id="{{ game_id }}-tools" class="card-text">
+      <p id="{{ game_id }}-tools-platforms" class="card-text">
         {%- for tool in game_tools -%}
         <span class="badge badge-pill text-primary border border-primary ml-1">{{ tool }}</span>
         {%- endfor -%}
+        {%- for platform in game_platforms -%}
+        <span class="badge badge-pill text-primary border border-info ml-1">Platform: {{ platform }}</span>
+        {%- endfor -%}
       </p>
 
-      {%- if game_publisher -%}
-      <span class="badge badge-pill text-primary border border-success ml-1">Publisher: {{ game_publisher }}</span>
-      {%- endif -%}
+      <p id="{{ game_id }}-meta-details" class="card-text">
+        {%- if game_publisher -%}
+        <span class="badge badge-pill text-primary border border-success ml-1">Publisher: {{ game_publisher }}</span>
+        {%- endif -%}
+      </p>
     </div>
   </a>
 </div>

@@ -10,20 +10,25 @@
 <!-- Games -->
 <div class="card-columns m-3 mt-5">
   {% for game in site.games %}
-    {%- assign game_id        = game.name | slugify -%}
-    {%- assign game_img       = game.image -%}
-    {%- assign game_name      = game.name -%}
-    {%- assign game_desc      = game.description -%}
-    {%- assign game_tools     = game.tools -%}
-    {%- assign game_publisher = game.publisher -%}
 
-    {%- if game.external_url -%}
-      {%- assign game_url     = game.external_url -%}
-      {%- assign external     = true -%}
-    {%- else -%}
-      {%- assign game_url     = game.url | relative_url -%}
-      {%- assign external     = false -%}
-    {%- endif -%}
+    {% if game.hidden %}
+    {% else %}
+      {%- assign game_id        = game.name | slugify -%}
+      {%- assign game_img       = game.image -%}
+      {%- assign game_name      = game.name -%}
+      {%- assign game_desc      = game.description -%}
+      {%- assign game_tools     = game.tools -%}
+      {%- assign game_publisher = game.publisher -%}
+      {%- assign game_platforms = game.platforms -%}
+
+      {%- if game.external_url -%}
+        {%- assign game_url     = game.external_url -%}
+        {%- assign external     = true -%}
+      {%- else -%}
+        {%- assign game_url     = game.url | relative_url -%}
+        {%- assign external     = false -%}
+      {%- endif -%}
+    {% endif %}
 
     {% include games/game-card.html %}
   {% endfor %}
