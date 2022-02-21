@@ -36,32 +36,34 @@
 <!-- Remote Projects -->
 <h2>Open Source Projects</h2>
 <div class="card-columns m-3 mt-5">
-  {%- for repo in site.github.public_repositories -%}
+  {% assign sort_order = 'stargazers_count', 'last' %}
+  {% assign filtered_repos = site.github.public_repositories | where:'fork', false | sort: sort_order | reverse %}
+
+  {%- for repo in filtered_repos -%}
   
-    {%- if repo.fork == false -%}
+    {%- assign project = repo -%}
+    {%- assign words = project.name | split: '-' -%}
+    
+    {%- capture titlecase -%}
+      {%- for word in words -%}
+        {{ word | capitalize | append: ' ' }}
+      {%- endfor -%}
+    {%- endcapture -%}
   
-      {%- assign project = repo -%}
-      {%- assign words = project.name | split: '-' -%}
-      
-      {%- capture titlecase -%}
-        {%- for word in words -%}
-          {{ word | capitalize | append: ' ' }}
-        {%- endfor -%}
-      {%- endcapture -%}
+    {%- assign project_type      = "remote" -%}
+    {%- assign project_id        = project.name -%}
+    {%- assign project_img       = false -%}
+    {%- assign project_name      = titlecase | strip -%}
+    {%- assign project_desc      = project.description -%}
+    {%- assign project_url       = project.html_url -%}
+    {%- assign project_tools     = project.topics -%}
+    {%- assign project_language  = project.language -%}
+    {%- assign project_archived  = project.archived -%}
+    {%- assign stargazers_count  = project.stargazers_count  -%}
+    {%- assign forks_count        = project.forks_count -%}
+    {%- assign external          = true -%}
   
-      {%- assign project_type      = "remote" -%}
-      {%- assign project_id        = project.name -%}
-      {%- assign project_img       = false -%}
-      {%- assign project_name      = titlecase | strip -%}
-      {%- assign project_desc      = project.description -%}
-      {%- assign project_url       = project.html_url -%}
-      {%- assign project_tools     = project.topics -%}
-      {%- assign project_language  = project.language -%}
-      {%- assign external          = true -%}
-  
-      {% include projects/project-card.html %}
-  
-    {%- endif -%}
+    {% include projects/project-card.html %}
   
   {%- endfor -%}
 </div>

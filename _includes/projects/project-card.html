@@ -19,7 +19,17 @@
         {%- if project_language %}
         <span class="badge badge-pill text-primary border border-success  ml-1">Language: {{ project_language }}</span>
         {%- endif -%}
+
+        {%- if project_archived %}
+        <span class="badge badge-pill text-primary border border-danger  ml-1">Archived</span>
+        {%- endif -%}
       </p>
+
+      {% if project_type == "remote" %}
+      <p id="{{ project_id }}-git-details" class="card-text">
+        Stars: {{ stargazers_count }} | Forks: {{ forks_count }} 
+      </p>
+      {% endif %}
     </div>
   </a>
 </div>
