@@ -1,5 +1,5 @@
 <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="{{ project_url }}" class="project card text-themed" {%- if external and site.open_new_tab -%} target="_blank" {%- endif -%}>
+    <a href="{{ project_url }}" class="project card text-themed" {%- if external and site.open_new_tab -%} target="_blank" {%- endif -%}>
     {%- if project_img -%}
     <img id="{{ project_id }}-img" class="card-img-top" src="{{ project_img }}" alt="{{ project_name }}" />
     {%- endif -%}
@@ -15,7 +15,21 @@
         {%- for tool in project_tools -%}
         <span class="badge badge-pill text-primary border border-primary ml-1">{{ tool }}</span>
         {%- endfor -%}
+
+        {%- if project_language %}
+        <span class="badge badge-pill text-primary border border-success  ml-1">Language: {{ project_language }}</span>
+        {%- endif -%}
+
+        {%- if project_archived %}
+        <span class="badge badge-pill text-primary border border-danger  ml-1">Archived</span>
+        {%- endif -%}
       </p>
+
+      {% if project_type == "remote" %}
+      <p id="{{ project_id }}-git-details" class="card-text">
+        Stars: {{ stargazers_count }} | Forks: {{ forks_count }} 
+      </p>
+      {% endif %}
     </div>
   </a>
 </div>
