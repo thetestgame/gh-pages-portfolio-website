@@ -4,7 +4,7 @@
     <img id="{{ mod_id }}-img" class="card-img-top" src="{{ mod_img }}" alt="{{ mod_name }}" />
     {%- endif -%}
     <div class="card-body">
-      <h5 id="{{ mod_id }}-name" class="card-title">{{ mod_name }}</h5>
+      <h5 id="{{ mod_id }}-name" class="card-title">{{ mod_game }} - {{ mod_name }}</h5>
       <p id="{{ mod_id }}-desc" class="card-text">{{ mod_desc }}</p>
       <p id="{{ mod_id }}-tools-platforms" class="card-text">
         {%- for tool in mod_tools -%}
@@ -16,9 +16,7 @@
       </p>
 
       <p id="{{ mod_id }}-meta-details" class="card-text">
-        {%- if mod_publisher -%}
-        <span class="badge badge-pill text-primary border border-success ml-1">Publisher: {{ mod_publisher }}</span>
-        {%- endif -%}
+        <span class="badge badge-pill text-primary border border-success ml-1">Game: {{ mod_game }}</span>
       </p>
     </div>
   </a>
