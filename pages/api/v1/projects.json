@@ -1,0 +1,21 @@
+---
+layout: none
+permalink: /api/v1/projects.json
+---
+[
+    {% for project in site.projects %}
+    {
+	    "project_id": "{{project.name | slugify }}",
+	    "project_image": "{{project.image}}",
+	    "project_name": "{{project.name}}",
+	    "project_description": "{{project.description}}",
+
+        {%- if project.external_url -%}
+            "project_url": "{{ project.external_url }}",
+            "external": "{{ true }}"
+        {%- else -%}
+            "project_url": "{{ project.url | relative_url }}",
+            "external": "{{ true }}"
+        {%- endif -%}
+    }{% if forloop.rindex0 > 0 %},{% endif %}{% endfor %}
+]
