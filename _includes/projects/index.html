@@ -37,10 +37,9 @@
 <h2>Open Source Projects</h2>
 <div class="card-columns m-3 mt-5">
   {% assign sort_order = 'stargazers_count', 'last' %}
-  {% assign filtered_repos = site.github.public_repositories | where:'fork', false | sort: sort_order | reverse %}
+  {% assign filtered_repos = site.github.public_repositories | where:'archived', false | where:'fork', false | sort: sort_order | reverse %}
 
   {%- for repo in filtered_repos -%}
-  
     {%- assign project = repo -%}
     {%- assign words = project.name | split: '-' -%}
     
@@ -59,8 +58,9 @@
     {%- assign project_tools     = project.topics -%}
     {%- assign project_language  = project.language -%}
     {%- assign project_archived  = project.archived -%}
+    {%- assign project_fork      = project.fork -%}
     {%- assign stargazers_count  = project.stargazers_count  -%}
-    {%- assign forks_count        = project.forks_count -%}
+    {%- assign forks_count       = project.forks_count -%}
     {%- assign external          = true -%}
   
     {% include projects/project-card.html %}
