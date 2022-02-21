@@ -1,27 +1,27 @@
 html {
-  padding-left: calc(100vw - 100%);
+    padding-left: calc(100vw - 100%);
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .badge {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 .bg-light,
 .badge-light {
-  &,
-  * {
-    color: $text-black !important;
-  }
+    &,
+    * {
+        color: $text-black !important;
+    }
 }
 
 .bg-dark,
 .badge-dark {
-  &,
-  * {
-    color: $text-white !important;
-  }
+    &,
+    * {
+        color: $text-white !important;
+    }
 }
