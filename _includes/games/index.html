@@ -7,29 +7,30 @@
   </div>
 </div>
 
-<!-- Projects -->
+<!-- Games -->
 <div class="card-columns m-3 mt-5">
-  {% for project in site.games %}
+  {% assign sort_order = 'name', 'last' %}
+  {% assign filtered_games = site.games | where: 'hidden', false | sort: sort_order %}
 
-    {%- assign project_type  = "local" -%}
-    {%- assign project_id    = project.name | slugify -%}
-    {%- assign project_img   = project.image -%}
-    {%- assign project_name  = project.name -%}
-    {%- assign project_desc  = project.description -%}
-    {%- assign project_tools = project.tools -%}
+  {% for game in filtered_games %}
+    {%- assign game_id        = game.name | slugify -%}
+    {%- assign game_img       = game.image -%}
+    {%- assign game_name      = game.name -%}
+    {%- assign game_desc      = game.description -%}
+    {%- assign game_tools     = game.tools -%}
+    {%- assign game_publisher = game.publisher -%}
+    {%- assign game_platforms = game.platforms -%}
 
-    {%- if project.external_url -%}
-      {%- assign project_url = project.external_url -%}
-      {%- assign external    = true -%}
+    {%- if game.external_url -%}
+      {%- assign game_url     = game.external_url -%}
+      {%- assign external     = true -%}
     {%- else -%}
-      {%- assign project_url = project.url | relative_url -%}
-      {%- assign external    = false -%}
+      {%- assign game_url     = game.url | relative_url -%}
+      {%- assign external     = false -%}
     {%- endif -%}
-
-    {% include projects/project-card.html %}
-
+    
+    {% include games/game-card.html %}
   {% endfor %}
-
 </div>
 
 <script>

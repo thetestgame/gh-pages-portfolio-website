@@ -1,15 +1,15 @@
 ---
-name: Create new website post
-about: Use this template to create a new website post
-title: "[YEAR]-[MONTH]-[DAY]-[post file name without spaces].md"
+name: Create new website project
+about: Use this template to create a new website project
+title: "[project file name without spaces].md"
 ---
 [REMOVE_THIS_STRING]---
-title:  "Post title"
-tags: [tag1,tag2]
-style: fill
-color: warning
-description: "Description
+name: "Project Name"
+tools: [tool1,tool2]
+image: "Project Image"
+description: "Description"
 external_url: "External Link"
+hidden: false
 [REMOVE_THIS_STRING]---
 
 ## Example syntax highlight

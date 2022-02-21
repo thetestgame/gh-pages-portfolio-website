@@ -10,8 +10,10 @@
 <!-- Local Projects -->
 <h2>Featured Projects</h2>
 <div class="card-columns m-3 mt-5">
-  {% for project in site.projects %}
+  {% assign sort_order = 'name', 'last' %}
+  {% assign filtered_projects = site.projects | where: 'hidden', false | sort: sort_order %}
 
+  {% for project in filtered_projects %}
     {%- assign project_type       = "local" -%}
     {%- assign project_id         = project.name | slugify -%}
     {%- assign project_img        = project.image -%}
@@ -29,7 +31,6 @@
     {%- endif -%}
 
     {% include projects/project-card.html %}
-
   {% endfor %}
 </div>
 
