@@ -1,4 +1,4 @@
-# This workflow automatically builds the Github Pages website and deploys it to the release branch
+# This workflow automatically builds the Github Pages website and deploys it to the github-pages branch
 # for distribution. During this process it also performs secondary publishing steps required such
 # as clearing the Cloudflare cache to reflect changes immediately.
 
@@ -23,8 +23,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      # Checks-out the release branch of the repository under $GITHUB_WORKSPACE
+      - name: Check out the release branch
+        uses: actions/checkout@v2
+        with:
+          ref: release
 
       # Deploy the website to the release branch to be published by Github Pages
       - name: Deploy to GitHub Pages
