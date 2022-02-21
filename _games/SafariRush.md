@@ -1,7 +1,7 @@
 ---
 name: Safari Rush
 tools: [Unity3D, C#, PlayFab]
-image: /images/safari-rush.png
+image: /images/games/safari-rush/safari-rush.png
 description: ''
-external_url: ''
+external_url: /games
 ---

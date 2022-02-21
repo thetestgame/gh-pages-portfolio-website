@@ -4,9 +4,16 @@
 
 name: Build/Deploy Website
 on:
+  # Allow manual deployments from Github's UI/API
   workflow_dispatch:
+
+  # Release a new build anytime a release change is published to the repository
   push:
     branches: [ release ]
+
+  # Force a new build every night to ensure the open source projects are kept up to date.
+  schedule:
+    - cron: 0 0 * * *
 
 jobs:
   # This workflow contains a single job called "build"

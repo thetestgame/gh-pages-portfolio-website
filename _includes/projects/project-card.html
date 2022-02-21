@@ -23,6 +23,10 @@
         {%- if project_archived %}
         <span class="badge badge-pill text-primary border border-danger  ml-1">Archived</span>
         {%- endif -%}
+
+        {%- if project_fork %}
+        <span class="badge badge-pill text-primary border border-warning  ml-1">Fork</span>
+        {%- endif -%}
       </p>
 
       {% if project_type == "remote" %}
