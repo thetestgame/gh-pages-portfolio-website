@@ -1,0 +1,21 @@
+---
+layout: none
+permalink: /api/v1/mods.json
+---
+[
+    {% for mod in site.mods %}
+    {
+	    "mod_id": "{{mod.name | slugify }}",
+	    "mod_image": "{{mod.image}}",
+	    "mod_name": "{{mod.name}}",
+	    "mod_description": "{{mod.description}}",
+
+        {%- if mod.external_url -%}
+            "mod_url": "{{ mod.external_url }}",
+            "external": "{{ true }}"
+        {%- else -%}
+            "mod_url": "{{ mod.url | relative_url }}",
+            "external": "{{ true }}"
+        {%- endif -%}
+    }{% if forloop.rindex0 > 0 %},{% endif %}{% endfor %}
+]
