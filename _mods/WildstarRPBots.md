@@ -6,4 +6,5 @@ description: An unfinished and abandoned Wildstar addon that allows your bots/pe
 external_url: https://github.com/thetestgame/Wildstar-RPBots
 platforms: [Windows]
 game: Wildstar
+hidden: false
 ---

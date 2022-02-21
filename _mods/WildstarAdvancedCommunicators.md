@@ -6,4 +6,5 @@ description: A Wildstar addon that extends the native CommDisplay addon by Carbi
 external_url: https://github.com/thetestgame/Wildstar-AdvancedCommunicators
 platforms: [Windows]
 game: Wildstar
+hidden: false
 ---

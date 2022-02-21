@@ -6,4 +6,5 @@ description: 'This mod provides Discord role based access to Eco servers. Allowi
 external_url: https://github.com/thetestgame/Eco-Discord-Access-Mod
 platforms: [Windows, MacOS, Linux]
 game: Eco
+hidden: false
 ---

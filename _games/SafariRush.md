@@ -6,4 +6,5 @@ description: ''
 external_url: /games
 publisher: Digital Descent, LLC
 platforms: [Android, IOS]
+hidden: false
 ---

@@ -6,4 +6,5 @@ description: The Sims 3 Online mod allows the creation of 20 player community to
 external_url: /mods
 platforms: [Windows]
 game: The Sims 3
+hidden: false
 ---

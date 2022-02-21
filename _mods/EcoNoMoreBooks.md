@@ -6,4 +6,5 @@ description: Tired of players getting a book from the research table just to han
 external_url: https://github.com/thetestgame/Eco-No-More-Books-Mod
 platforms: [Windows, MacOS, Linux]
 game: Eco
+hidden: false
 ---

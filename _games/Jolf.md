@@ -6,4 +6,5 @@ description: Jölf is a modding first physics mini golf game made in Unreal Engi
 external_url: /games
 publisher: Digital Descent, LLC
 platforms: [Windows, MacOs, Linux, Steam Deck]
+hidden: false
 ---

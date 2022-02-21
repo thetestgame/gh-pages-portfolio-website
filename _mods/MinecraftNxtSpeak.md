@@ -6,4 +6,5 @@ description: NxtSpeak is an Bukkit plugin for Minecraft. It creates a TeamSpeak3
 external_url: /mods
 platforms: [Windows, Linux, MacOS]
 game: Minecraft
+hidden: false
 ---

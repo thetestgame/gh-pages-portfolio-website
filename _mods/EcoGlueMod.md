@@ -6,4 +6,5 @@ description: The Eco glue mod is a joke meme mod for Eco based around Streamer A
 external_url: https://github.com/thetestgame/EcoGlueMod
 platforms: [Windows, MacOS, Linux]
 game: Eco
+hidden: false
 ---

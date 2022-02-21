@@ -6,4 +6,5 @@ description: Eco is a simulation game created by American studio Strange Loop Ga
 external_url: https://play.eco
 publisher: Strange Loop Games
 platforms: [Windows, MacOs, Linux]
+hidden: false
 ---

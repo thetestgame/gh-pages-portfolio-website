@@ -9,28 +9,27 @@
 
 <!-- Games -->
 <div class="card-columns m-3 mt-5">
-  {% for mod in site.mods %}
+  {% assign sort_order = 'name', 'last' %}
+  {% assign filtered_mods = site.mods | where: 'hidden', false | sort: sort_order %}
 
-    {% if mod.hidden %}
-    {% else %}
-      {%- assign mod_id        = mod.name | slugify -%}
-      {%- assign mod_img       = mod.image -%}
-      {%- assign mod_name      = mod.name -%}
-      {%- assign mod_desc      = mod.description -%}
-      {%- assign mod_tools     = mod.tools -%}
-      {%- assign mod_game      = mod.game -%}
-      {%- assign mod_platforms = mod.platforms -%}
+  {% for mod in filtered_mods %}
+    {%- assign mod_id        = mod.name | slugify -%}
+    {%- assign mod_img       = mod.image -%}
+    {%- assign mod_name      = mod.name -%}
+    {%- assign mod_desc      = mod.description -%}
+    {%- assign mod_tools     = mod.tools -%}
+    {%- assign mod_game      = mod.game -%}
+    {%- assign mod_platforms = mod.platforms -%}
 
-      {%- if mod.external_url -%}
-        {%- assign mod_url     = mod.external_url -%}
-        {%- assign external     = true -%}
-      {%- else -%}
-        {%- assign mod_url     = mod.url | relative_url -%}
-        {%- assign external     = false -%}
-      {%- endif -%}
+    {%- if mod.external_url -%}
+      {%- assign mod_url     = mod.external_url -%}
+      {%- assign external     = true -%}
+    {%- else -%}
+      {%- assign mod_url     = mod.url | relative_url -%}
+      {%- assign external     = false -%}
+    {%- endif -%}
 
-      {% include mods/mod-card.html %}
-    {% endif %}
+    {% include mods/mod-card.html %}
   {% endfor %}
 </div>
 

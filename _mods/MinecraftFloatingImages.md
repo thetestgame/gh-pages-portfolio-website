@@ -6,4 +6,5 @@ description: The Bukkit Floating Images plugin allows for the creation of floati
 external_url: /mods
 platforms: [Windows, Linux, MacOS]
 game: Minecraft
+hidden: false
 ---
