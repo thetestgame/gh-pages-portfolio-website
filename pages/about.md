@@ -20,11 +20,14 @@ Since 2004 I've been living and breathing software development, progressively bu
 <div class="row">
     <div class="col">
         {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
-        {% include about/skills.html title="Hardware Skills" source=site.data.hardware-skills %}
-        {% include about/skills.html title="Other Skills" source=site.data.other-skills %}
+        <!--{% include about/skills.html title="Hardware Skills" source=site.data.hardware-skills %}-->
+        <!--{% include about/skills.html title="Other Skills" source=site.data.other-skills %}-->
     </div>
     <div class="col">
         <h2>Work History</h2>
-        {% include about/timeline.html %}
+        {% include about/work-timeline.html %}
+
+        <h2>Volunteer History</h2>
+        {% include about/volunteer-timeline.html %}
     </div>
 </div>
