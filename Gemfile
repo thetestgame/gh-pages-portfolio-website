@@ -7,3 +7,7 @@ gem "webrick", "~> 1.7"
 group :jekyll_plugins do
   gem 'jekyll_pages_api'
 end
+
+group :jekyll_plugins do
+  gem 'jekyll-remote-include', :github => 'netrics/jekyll-remote-include'
+end
