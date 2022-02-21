@@ -11,7 +11,7 @@ open_new_tab        : false
 plugins:
   - jemoji
   - jekyll-twitch
-
+  - jekyll-remote-include
 
 ### Navbar Settings ###
 nav_exclude:                                            # The following paths are excluded from navbar
