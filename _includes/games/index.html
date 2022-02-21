@@ -28,9 +28,9 @@
         {%- assign game_url     = game.url | relative_url -%}
         {%- assign external     = false -%}
       {%- endif -%}
+      
+      {% include games/game-card.html %}
     {% endif %}
-
-    {% include games/game-card.html %}
   {% endfor %}
 </div>
 
