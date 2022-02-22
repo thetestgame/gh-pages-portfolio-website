@@ -4,7 +4,7 @@ description         : >-
                       Your general overall nerdy game developer. Powered by coffee.
 baseurl             : ""
 repository          : thetestgame/thetestgame.github.io 
-open_new_tab        : false
+open_new_tab        : true
 
 
 ### Plugins ###

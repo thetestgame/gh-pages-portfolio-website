@@ -6,4 +6,5 @@ description: Capture the Packet was a retro hacker themed multiplayer first pers
 external_url: https://github.com/CaptureThePacket
 platforms: [Windows, MacOs, Linux]
 hidden: false
+remaster: false
 ---

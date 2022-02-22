@@ -1,18 +1,52 @@
 <h1>My Games</h1>
 
 <!-- Card Search -->
-<div class="row py-2">
+<div class="row py-2 mb-5">
   <div class="col-sm-4">
     <input type="search" placeholder="Filter games by title, tag, ect..." name="search" class="form-control searchbox-input text-light" required="">
   </div>
 </div>
 
-<!-- Games -->
+<!-- NEw Games -->
+<h2>New Games</h2>
 <div class="card-columns m-3 mt-5">
   {% assign sort_order = 'name', 'last' %}
-  {% assign filtered_games = site.games | where: 'hidden', false | sort: sort_order %}
+  {% assign filtered_personal_games = site.games | where: 'hidden', false | where: 'remaster', false | sort: sort_order %}
 
-  {% for game in filtered_games %}
+  {% for game in filtered_personal_games %}
+    {%- assign game_id        = game.name | slugify -%}
+    {%- assign game_img       = game.image -%}
+    {%- assign game_name      = game.name -%}
+    {%- assign game_desc      = game.description -%}
+    {%- assign game_tools     = game.tools -%}
+    {%- assign game_publisher = game.publisher -%}
+    {%- assign game_platforms = game.platforms -%}
+
+    {%- if game.external_url -%}
+      {%- assign game_url     = game.external_url -%}
+      {%- assign external     = true -%}
+    {%- else -%}
+      {%- assign game_url     = game.url | relative_url -%}
+      {%- assign external     = false -%}
+    {%- endif -%}
+    
+    {% include games/game-card.html %}
+  {% endfor %}
+</div>
+
+<!-- Remastered Games -->
+<h2>Remastered Games</h2><br/>
+<div class="text-wrap">
+  <p>
+  Through a constant desire to create, learn, and practice the art of game development I have rebuilt/remastered various dead online games over the years. 
+  This list represents the most recent rebuild projects of mine.
+  </p>
+</div>
+<div class="card-columns m-3 mt-5">
+  {% assign sort_order = 'name', 'last' %}
+  {% assign filtered_remastered_games = site.games | where: 'hidden', false | where: 'remaster', true | sort: sort_order %}
+
+  {% for game in filtered_remastered_games %}
     {%- assign game_id        = game.name | slugify -%}
     {%- assign game_img       = game.image -%}
     {%- assign game_name      = game.name -%}

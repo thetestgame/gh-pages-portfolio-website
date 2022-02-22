@@ -7,4 +7,5 @@ external_url: https://play.eco
 publisher: Strange Loop Games
 platforms: [Windows, MacOs, Linux]
 hidden: false
+remaster: false
 ---

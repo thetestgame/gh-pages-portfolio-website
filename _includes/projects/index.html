@@ -23,11 +23,11 @@
     {%- assign project_language   = project.language -%}
 
     {%- if project.external_url -%}
-      {%- assign project_url = project.external_url -%}
-      {%- assign external    = true -%}
+      {%- assign project_url      = project.external_url -%}
+      {%- assign external         = true -%}
     {%- else -%}
-      {%- assign project_url = project.url | relative_url -%}
-      {%- assign external    = false -%}
+      {%- assign project_url      = project.url | relative_url -%}
+      {%- assign external         = false -%}
     {%- endif -%}
 
     {% include projects/project-card.html %}
@@ -56,6 +56,7 @@
     {%- assign project_name      = titlecase | strip -%}
     {%- assign project_desc      = project.description -%}
     {%- assign project_url       = project.html_url -%}
+    {%- assign project_homepae   = project.homepage -%}
     {%- assign project_tools     = project.topics -%}
     {%- assign project_language  = project.language -%}
     {%- assign project_archived  = project.archived -%}
