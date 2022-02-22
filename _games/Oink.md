@@ -7,5 +7,6 @@ external_url: https://rumrunnerentertainment.itch.io/oink
 publisher: Rumrunner Entertainment, LLC
 platforms: [Windows, MacOs, Linux]
 hidden: false
+remaster: false
 ---
 
