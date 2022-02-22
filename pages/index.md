@@ -1,12 +1,8 @@
 ---
-layout: default
+layout: full-page
+title: About
 permalink: /
+weight: 1
 ---
 
-<script type="text/javascript">
-    if (screen.width <= 996) {
-        document.location = "/landing";
-    } else {
-        document.location = "/games";
-    }
-</script>
+{% include about.html %}
