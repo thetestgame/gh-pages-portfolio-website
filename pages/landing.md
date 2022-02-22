@@ -1,6 +1,6 @@
 ---
 layout: container-page
-permalink: /
+permalink: /landing
 ---
 
 {% include landing.html %}

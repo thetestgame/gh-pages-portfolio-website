@@ -10,8 +10,10 @@
         {{ content }}
     </main>
 
-    {% include footer.html %} {% include analytics.html %} {% include scripts.html %}
+    <div class="d-none d-sm-block d-md-block d-lg-none">
+        {% include footer.html %} 
+    </div>
+    {% include analytics.html %} {% include scripts.html %}
 
 </body>
-
 </html>

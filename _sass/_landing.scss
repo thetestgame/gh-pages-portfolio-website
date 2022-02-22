@@ -27,17 +27,3 @@
     object-position: center;
     image-rendering: auto;
 }
-
-@media (min-width: 992px) {
-    .landing-background {
-        background-image: url('/images/dialog_bg_computer.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        padding: 10%;
-        image-rendering: -moz-crisp-edges;
-        image-rendering: -webkit-crisp-edges;
-        image-rendering: pixelated;
-        image-rendering: crisp-edges;
-    }
-}
