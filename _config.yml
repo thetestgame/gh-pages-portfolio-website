@@ -5,6 +5,7 @@ description         : >-
 baseurl             : ""
 repository          : thetestgame/thetestgame.github.io 
 open_new_tab        : true
+show_rebuilt_games  : true
 
 
 ### Plugins ###

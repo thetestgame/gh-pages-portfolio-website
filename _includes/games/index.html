@@ -34,6 +34,7 @@
   {% endfor %}
 </div>
 
+{% if site.show_rebuilt_games %}
 <!-- Rebuilt Games -->
 <h2>Rebuilt Games</h2><br/>
 <div class="text-wrap">
@@ -66,6 +67,7 @@
     {% include games/game-card.html %}
   {% endfor %}
 </div>
+{% endif %}
 
 <script>
 $(document).ready(function(){
