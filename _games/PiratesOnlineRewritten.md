@@ -6,5 +6,5 @@ description: Pirates of the Carribean Online Rewritten was a full scale effort t
 external_url: https://github.com/PiratesOnlineRewritten
 platforms: [Windows, MacOs, Linux]
 hidden: false
-remaster: true
+rebuilt: true
 ---
