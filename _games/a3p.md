@@ -6,5 +6,5 @@ description: A3P, an online multiplayer third person shooter game written in Pan
 external_url: https://anythingtechpro.itch.io/a3p
 platforms: [Windows, MacOs, Linux]
 hidden: false
-remaster: false
+rebuilt: false
 ---

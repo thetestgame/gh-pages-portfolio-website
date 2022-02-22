@@ -6,5 +6,5 @@ description: Pirates Online Classic was a full scale effort to rebuild the 2007 
 external_url: /games
 platforms: [Windows, MacOs, Linux]
 hidden: false
-remaster: true
+rebuilt: true
 ---

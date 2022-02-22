@@ -6,5 +6,5 @@ description: Sketches through Time was a prototype point and click adventure gam
 external_url: /games
 platforms: [Windows, MacOs, Linux]
 hidden: false
-remaster: false
+rebuilt: false
 ---

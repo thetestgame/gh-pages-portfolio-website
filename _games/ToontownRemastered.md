@@ -6,7 +6,7 @@ description: Toontown remastered is a full upgrade to modern Python 3.x and Pand
 external_url: /games
 platforms: [Windows, MacOs, Linux]
 hidden: false
-remaster: true
+rebuilt: true
 ---
 
 <div align="center">

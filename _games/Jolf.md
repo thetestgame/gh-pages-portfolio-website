@@ -7,5 +7,5 @@ external_url: /games
 publisher: Digital Descent, LLC
 platforms: [Windows, MacOs, Linux, Steam Deck]
 hidden: false
-remaster: false
+rebuilt: false
 ---
