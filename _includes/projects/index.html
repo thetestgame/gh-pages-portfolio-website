@@ -40,7 +40,7 @@
   {% assign sort_order = 'stargazers_count', 'last' %}
   {% assign filtered_repos = site.github.public_repositories | where:'archived', false | where:'fork', false | sort: sort_order | reverse %}
 
-  {%- for repo in filtered_repos -%}
+  {%- for repo in filtered_repos | limit: 15 -%}
     {%- assign project = repo -%}
     {%- assign words = project.name | split: '-' -%}
     
