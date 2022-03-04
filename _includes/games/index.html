@@ -7,8 +7,10 @@
   </div>
 </div>
 
-<!-- NEw Games -->
+<!-- New Games -->
+{% if site.show_rebuilt_games %}
 <h2>New Games</h2>
+{% endif %}
 <div class="card-columns m-3 mt-5">
   {% assign sort_order = 'name', 'last' %}
   {% assign filtered_personal_games = site.games | where: 'hidden', false | where: 'rebuilt', false | sort: sort_order %}
@@ -34,6 +36,7 @@
   {% endfor %}
 </div>
 
+{% if site.show_rebuilt_games %}
 <!-- Rebuilt Games -->
 <h2>Rebuilt Games</h2><br/>
 <div class="text-wrap">
@@ -66,6 +69,7 @@
     {% include games/game-card.html %}
   {% endfor %}
 </div>
+{% endif %}
 
 <script>
 $(document).ready(function(){

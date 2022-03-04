@@ -60,6 +60,8 @@ body {
         width: 232px;
         flex-flow: column nowrap;
         align-items: flex-start;
+        border-right: 4px solid #434343;
+        background: url(/images/nav-bg.gif) #353535;
     }
     .navbar.fixed-left .navbar-collapse {
         flex-grow: 0;

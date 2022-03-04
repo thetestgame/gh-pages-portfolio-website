@@ -5,6 +5,7 @@ description         : >-
 baseurl             : ""
 repository          : thetestgame/thetestgame.github.io 
 open_new_tab        : true
+show_rebuilt_games  : false
 
 
 ### Plugins ###
@@ -13,11 +14,13 @@ plugins:
   - jekyll-twitch
   - jekyll-remote-include
 
+
 ### Navbar Settings ###
 nav_exclude:                                            # The following paths are excluded from navbar
   - pages/tags.html
   - pages/404.html
   - pages/index.md
+  - pages/blog.html
 
 
 ### Author Info ###
