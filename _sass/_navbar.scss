@@ -43,10 +43,7 @@ body {
 }
 
 .navbar {
-    /*background-color: #242526;*/
-    background: url(/images/nav-bg.gif) #353535;
-    border-bottom: 4px solid #434343;
-    /*box-shadow: 0px 1px 3px rgb(0 0 0 / 25%);*/
+    background-color: #242526;
 }
 
 .navbar.fixed-left {
@@ -55,8 +52,6 @@ body {
     left: 0;
     right: 0;
     z-index: 1030;
-    border-right: 4px solid #434343;
-    border-bottom: none;
 }
 
 @media (min-width: 992px) {
@@ -65,6 +60,8 @@ body {
         width: 232px;
         flex-flow: column nowrap;
         align-items: flex-start;
+        border-right: 4px solid #434343;
+        background: url(/images/nav-bg.gif) #353535;
     }
     .navbar.fixed-left .navbar-collapse {
         flex-grow: 0;
