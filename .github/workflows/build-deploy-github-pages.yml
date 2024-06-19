@@ -7,35 +7,76 @@ on:
   # Allow manual deployments from Github's UI/API
   workflow_dispatch:
 
-  # Release a new build anytime a release change is published to the repository
+  # Release a new build anytime a change is published to the repository
   push:
-    branches: [ release ]
 
   # Force a new build every night to ensure the open source projects are kept up to date.
   schedule:
     - cron: 0 0 * * *
 
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  # This workflow contains a single job called "build"
+  # Build job
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out the release branch of the repository under $GITHUB_WORKSPACE
-      - name: Check out the release branch
-        uses: actions/checkout@v2
-        with:
-          ref: release
+      # Check out the source
+      - name: Checkout
+        uses: actions/checkout@v3
 
-      # Deploy the website to the release branch to be published by Github Pages
-      - uses: helaili/jekyll-action@v2
+      # Setup Ruby for building Jekyll
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          target_branch: 'github-pages'
+          ruby-version: '3.1' # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          cache-version: 0 # Increment this number if you need to re-download cached gems
+          
+      # Setup Github Pages 
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v3
 
-      # Clears the Cloudflare zone's cache via the Cloudflare API
+      # Build the Jekyll project
+      - name: Build with Jekyll
+        # Outputs to the './_site' directory by default
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+
+      # Upload the artifact for later use
+      - name: Upload artifact
+        # Automatically uploads an artifact from the './_site' directory by default
+        uses: actions/upload-pages-artifact@v1
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+
+    # Steps required to deploy
+    steps:
+      # Deploy to Github
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+
+      # Clear Cloudflare Cache
       - name: Purge cache
         uses: jakejarvis/cloudflare-purge-action@master
         env:
