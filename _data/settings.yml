@@ -84,10 +84,7 @@ blog__settings:
 contact__settings:
   contact__email: me@jordan-maxwell.com # Add your email for contact form
   contact__title: <span class="text-span">Get</span> in touch # Add a title to your form
-  contact__description: Reach out if you have questions about an open source project or looking for a freelance developer!. # Add a description to your form
-
-# NOTE
-# Avenco comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want.
+  contact__description: Reach out if you have questions about an open source project or looking for a freelance developer! # Add a description to your form
 
 
 #-------------------------------
