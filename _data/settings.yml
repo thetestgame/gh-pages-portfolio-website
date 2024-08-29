@@ -39,7 +39,7 @@ author:
 
 projects__settings:
   projects__title: Latest <span class="text-span">Games</span> and <span class="text-span">Personal Projects</span> # Add a 'text-span' class to highlight text.
-  projects__description: A complete collection of all my notable project and games.
+  projects__description: A complete collection of all my notable projects and games.
 
 
 #-------------------------------
