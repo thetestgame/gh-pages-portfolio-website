@@ -9,6 +9,8 @@ on:
 
   # Release a new build anytime a change is published to the repository
   push:
+    branches:
+      - main
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
