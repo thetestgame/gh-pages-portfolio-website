@@ -1,19 +1,45 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en">
 
 {% include head.html %}
 
-<body class="h-100 d-flex flex-column">
+<body>
 
-    <main class="container-fluid">
-        {% include navbar.html %} 
-        {{ content }}
-    </main>
+  {% if site.data.settings.google-analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
 
-    <div class="d-none d-sm-block d-md-block d-lg-none">
-        {% include footer.html %} 
+  {% if site.data.settings.cover__image %}
+    <div class="top-cover">
+      <div class="cover-image">
+        <img class="lazy" data-src="{{site.data.settings.cover__image}}" alt="{{site.data.settings.title}}">
+      </div>
     </div>
-    {% include analytics.html %} {% include scripts.html %}
+  {% endif %}
 
+  {% include header.html %}
+
+  <!-- begin content -->
+  <main class="content animate" aria-label="Content">
+    {{ content }}
+  </main>
+  <!-- end content -->
+
+  {% include contact-form.html %}
+
+  {% if site.data.settings.mailchimp__settings.mailchimp__enabled %}
+    {% include section-subscribe.html %}
+  {% endif %}
+
+  <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
+
+  {% include footer.html %}
+
+  <script src="{{ site.baseurl }}/js/scripts.js"></script>
+  <script>
+    var itype_text = [{{site.data.settings.mailchimp__settings.mailchimp__text}}];
+  </script>
+  <script src="{{ site.baseurl }}/js/common.js"></script>
 </body>
+
 </html>

@@ -1,110 +1,62 @@
-### Site Settings ###
-title               : Jordan Maxwell
-description         : >-
-                      Your general overall nerdy game developer. Powered by coffee.
-baseurl             : ""
-repository          : thetestgame/thetestgame.github.io 
-open_new_tab        : true
-show_rebuilt_games  : false
+#-------------------------------
+# General Site Settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://jordan-maxwell.info" # the base hostname & protocol for your site, e.g. http://example.com
 
 
-### Plugins ###
+#-------------------------------
+# Build Settings
+markdown: kramdown
+permalink: /:title
 plugins:
-  - jemoji
-  - jekyll-twitch
-  - jekyll-remote-include
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll/tagging
+
+paginate: 6
+paginate_path: "/blog/page/:num"
 
 
-### Navbar Settings ###
-nav_exclude:                                            # The following paths are excluded from navbar
-  - pages/tags.html
-  - pages/404.html
-  - pages/index.md
-  - pages/blog.html
-
-
-### Author Info ###
-author:
-  name              : Jordan Maxwell
-  image             : https://avatars.githubusercontent.com/u/2001527?v=4
-# behance           : thetestgame
-# dribbble          : thetestgame
-  email             : nxtlabs13@gmail.com
-#  facebook         : thetestgame
-  github            : thetestgame
-  gitlab            : thetestgame
-# instagram         : thetestgame
-# kaggle            : thetestgame
-  linkedin          : thetestgame
-# medium            : thetestgame
-# soundcloud        : thetestgame
-# spotify           : thetestgame
-# stackoverflow     : your_user_id
-# tumblr            : thetestgame.tumblr.com
-  twitch            : thetestgame
-  twitter           : thetestgame2
-# vimeo             : thetestgame
-  youtube           : UCe3YxaTrVk25oaO1mFSs2cw
-# keybase           : thetestgame
-
-
-### Posts ###
-permalink: /blog/:title
-
-
-### Collections ###
+# Collections
 collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /blog/:slug
   projects:
     output: true
-    permalink: /projects/:name
-  games:
-    output: true
-    permalink: /games/:name
-  mods:
-    output: true
-    permalink: /mods/:name
+    permalink: /project/:slug
 
-### Disqus ###
-disqus:
-  shortname: your-short-name-disqus                     # Your website Shortname on disqus
-
-
-### Analytics ###
-analytics:
-  enabled: false                                        # Set true to enable analytics
-  google:
-    tracking_id: your-google-tracking-id
-
-
-### Defaults for collections ###
+# Pages Path
 defaults:
   - scope:
       path: ""
-      type: "projects"
     values:
-      layout: "page"
+      layout: "default"
   - scope:
       path: ""
-      type: "games"
-    values:
-      layout: "page"
-  - scope:
-      path: ""
-      type: "mods"
+      type: "pages"
     values:
       layout: "page"
   - scope:
       path: ""
       type: "posts"
     values:
-      comments: false                                   # Set to true to enable disqus comments
+      layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
 
 
-### Exclude from processing ###
-exclude:
-  - README.md
-  - CONTRIBUTING.md
-  - LICENSE
-  - "*.log"
-  - Dockerfile
-  - "vendor/bundle"
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag_page
+tag_permalink_style:  /:title
+
+sass:
+  sass_dir: _sass
+  style: compressed

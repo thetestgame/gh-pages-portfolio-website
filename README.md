@@ -1,14 +1,9 @@
-<div align="center">
-  <h1>Jordan Maxwell's Portfolio</h1>
-  <i>A staticly built personal portfolio and api. Hosted with GitHub Pages.</i><br/>
-  
-  <img src="https://github.com/thetestgame/thetestgame.github.io/actions/workflows/build-deploy-github-pages.yml/badge.svg?branch=release"> 
-  <img src="https://github.com/thetestgame/thetestgame.github.io/actions/workflows/build-docker-image.yml/badge.svg?branch=release">
+# Personal Website
 
-  <a href="https://jordan-maxwell.info">Website</a>
-  •
-  <a href="https://jordan-maxwell.info/api/">Api Documentation</a>
 
-  <a href="https://jordan-maxwell.info"><img src=".github/screenshot-projects.jpg"></a><br/><br/>
-  <sub><sup>© 2022 Jordan Maxwell, licensed under the <a href="./LICENSE">MIT License</a>.</sup></sub>
-</div>
+
+### Deployment
+
+To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
+
+I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.

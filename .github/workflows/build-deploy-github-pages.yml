@@ -10,11 +10,6 @@ on:
   # Release a new build anytime a change is published to the repository
   push:
 
-  # Force a new build every night to ensure the open source projects are kept up to date.
-  schedule:
-    - cron: 0 0 * * *
-
-
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read

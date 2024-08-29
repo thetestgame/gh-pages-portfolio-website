@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% include section-author.html %}
+
+{% include section-projects.html %}
+
+{% if site.data.settings.testimonial__enabled %}
+    {% include section-testimonials.html %}
+{% endif %}
+
+{% include section-blog.html %}
