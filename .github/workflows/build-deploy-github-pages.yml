@@ -7,6 +7,10 @@ on:
   # Allow manual deployments from Github's UI/API
   workflow_dispatch:
 
+  # Run every day at 12:00 AM UTC
+  schedule:
+    - cron: '0 0 * * *'
+
   # Release a new build anytime a change is published to the repository
   push:
     branches:
@@ -48,7 +52,8 @@ jobs:
 
       # Run the Github projects powershell script
       - name: Collect Github projects
-        run: powershell -File ./.github/scripts/Get-OpenSourceProjects.ps1
+        run: ./.github/scripts/Get-OpenSourceProjects.ps1
+        shell: pwsh
 
       # Build the Jekyll project
       - name: Build with Jekyll
@@ -61,6 +66,9 @@ jobs:
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v1
+
+      # Keep the workflow alive
+      - uses: gautamkrishnar/keepalive-workflow@v1 # using the workflow with default settings
 
   # Deployment job
   deploy:
