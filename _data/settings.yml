@@ -47,7 +47,7 @@ projects__settings:
 
 os_project__settings:
   os_project__title: <span class="text-span">Open Source</span> Projects # Add a 'text-span' class to highlight text.
-  os_project__description: A collection of all my open source projects.
+  os_project__description: A collection of my top open source projects. These are projects I've developed and maintained over the years.
 
 
 #-------------------------------
