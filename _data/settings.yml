@@ -96,6 +96,7 @@ mailchimp__settings:
   mailchimp__button__text: Subscribe # Add your button text
   mailchimp__enabled: false # Enable or disable the newsletter form
 
+
 #-------------------------------
 # Comment Section (Disqus)
 disqus-identifier: thetestgame # add your shortname for Disqus Comment. For example anvodstudio-demo
