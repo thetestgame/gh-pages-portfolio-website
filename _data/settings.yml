@@ -38,8 +38,16 @@ author:
 # Projects Settings
 
 projects__settings:
-  projects__title: Latest <span class="text-span">Games</span> and <span class="text-span">Personal Projects</span> # Add a 'text-span' class to highlight text.
-  projects__description: A complete collection of all my notable projects and games.
+  projects__title: Major <span class="text-span">Games</span> and <span class="text-span">Projects</span> # Add a 'text-span' class to highlight text.
+  projects__description: A complete collection of all my major projects and games. These are things I've developed as part of my career and as personal hobby projects.
+  projects__summary_description: A brief collection of my latest main projects and games. # Add a description to your summary section.
+
+#-------------------------------
+# Open Source Project Settings
+
+os_project__settings:
+  os_project__title: <span class="text-span">Open Source</span> Projects # Add a 'text-span' class to highlight text.
+  os_project__description: A collection of all my open source projects.
 
 
 #-------------------------------

@@ -28,6 +28,7 @@ collections:
   projects:
     output: true
     permalink: /project/:slug
+  os_projects:
 
 # Pages Path
 defaults:
@@ -50,7 +51,6 @@ defaults:
       type: "projects"
     values:
       layout: "project"
-
 
 # Tags
 tag_page_dir:         tag

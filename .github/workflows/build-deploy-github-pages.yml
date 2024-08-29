@@ -46,6 +46,10 @@ jobs:
         id: pages
         uses: actions/configure-pages@v3
 
+      # Run the Github projects powershell script
+      - name: Collect Github projects
+        run: powershell -File ./.github/scripts/Get-OpenSourceProjects.ps1
+
       # Build the Jekyll project
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
