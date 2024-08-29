@@ -36,6 +36,11 @@ body {
   }
 }
 
+main {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 *::selection {
   color: $white;
   background-color: rgba($primary-color, 0.8);
@@ -297,10 +302,10 @@ table td {
   .cover-image {
     &::after {
       will-change: transform;
-      background: linear-gradient(180deg, rgba($site-color, 0.4) 0%, $site-color 95%);
+      background: linear-gradient(180deg, rgba($site-color, 0.6) 0%, $site-color 95%);
 
       @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-        background: linear-gradient(180deg, rgba($site-color, 0.4) 0%, $site-color 95%);
+        background: linear-gradient(180deg, rgba($site-color, 0.6) 0%, $site-color 95%);
       }
     }
   }
@@ -314,10 +319,10 @@ table td {
   .cover-image {
     &::after {
       will-change: transform;
-      background: linear-gradient(0, rgba($site-color, 0.4) 0%, $site-color 95%);
+      background: linear-gradient(0, rgba($site-color, 0.6) 0%, $site-color 95%);
 
       @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-        background: linear-gradient(0, rgba($site-color, 0.4) 0%, $site-color 95%);
+        background: linear-gradient(0, rgba($site-color, 0.6) 0%, $site-color 95%);
       }
     }
   }
