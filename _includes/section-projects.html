@@ -14,10 +14,10 @@
               <p class="section__description">{{ site.data.settings.projects__settings.projects__description }}</p>
             {% endif %}
           </div>
-
           <div class="row">
-            {% for project in site.projects reversed limit:6 %}
-            <article class="project col col-4 col-d-6 col-t-12">
+            {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+            {% for project in sorted_projects limit:6 %}
+            <article class="project col col-4 col-d-6 col-t12">
               <div class="project__content">
                 <a href="{{ project.url }}" class="project__image">
                   <img class="lazy" data-src="{{ project.image }}" alt="{{ project.title }}">

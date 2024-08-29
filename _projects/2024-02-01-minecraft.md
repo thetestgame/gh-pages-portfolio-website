@@ -1,7 +1,7 @@
 ---
 title: Minecraft
-date: 2024-02-01 00:00:00 +0300
-subtitle: Placeholder
+date: '2024-02-01'
+subtitle: A sandbox game developed by Mojang Studios and originally released in 2009. The game was created by Markus "Notch" Persson in the Java programming language
 image: '/images/project-minecraft-3.jpg'
 ---
 

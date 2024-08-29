@@ -1,6 +1,6 @@
 ---
 title: Fabio Perini Wearables
-date: 2015-01-01 00:00:00 +0300
+date: '2015-01-01'
 subtitle: Wearable Glasses was a technological solution developed by Fabio Perini, for remote and real-time technical assistance with 3D interaction using augmented reality provided by the DAQRI Headset.
 image: '/images/project-perini-wearables-1.jpg'
 ---
