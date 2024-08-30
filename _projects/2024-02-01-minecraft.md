@@ -2,16 +2,16 @@
 title: Minecraft
 date: '2024-02-01'
 subtitle: A sandbox game developed by Mojang Studios and originally released in 2009. The game was created by Markus "Notch" Persson in the Java programming language
-image: '/images/project-minecraft-3.jpg'
+image: '/images/projects/project-minecraft-3.jpg'
 ---
 
 In qua quid est boni praeter summam voluptatem, et eam sempiternam? Cur post Tarentum ad Archytam? Qua ex cognitione facilior facta est investigatio rerum occultissimarum. Negat enim tenuissimo victu, id est contemptissimis escis et potionibus, minorem voluptatem.
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-minecraft-1.jpg" alt="Project">
-    <img src="/images/project-minecraft-2.jpg" alt="Project">
-    <img src="/images/project-minecraft-3.jpg" alt="Project">
+    <img src="/images/projects/project-minecraft-1.jpg" alt="Project">
+    <img src="/images/projects/project-minecraft-2.jpg" alt="Project">
+    <img src="/images/projects/project-minecraft-3.jpg" alt="Project">
   </div>
   <em>Screenshots</em>
 </div>

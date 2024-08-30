@@ -2,7 +2,7 @@
 title: Toontown VR
 date: '2020-10-26'
 subtitle: An experimental virtual reality port of Disney's defunct Toontown Online. The project features a custom fork of the Panda3D game engine and a fully upgraded Python 3 version of the original Python 2.2 game.
-image: '/images/project-toontown-vr-1.jpg'
+image: '/images/projects/project-toontown-vr-1.jpg'
 ---
 
 Toontown VR was an experimental one off port of Disney's Toontown designed to run under Valve's OpenVR library. The user interface was not ported and controls were incomplete resulting in the user needing to take the headset off regularly to interact with the keyboard/mouse.

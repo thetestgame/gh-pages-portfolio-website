@@ -2,7 +2,7 @@
 title: Fabio Perini Wearables
 date: '2015-01-01'
 subtitle: Wearable Glasses was a technological solution developed by Fabio Perini, for remote and real-time technical assistance with 3D interaction using augmented reality provided by the DAQRI Headset.
-image: '/images/project-perini-wearables-1.jpg'
+image: '/images/projects/project-perini-wearables-1.jpg'
 ---
 
 In qua quid est boni praeter summam voluptatem, et eam sempiternam? Cur post Tarentum ad Archytam? Qua ex cognitione facilior facta est investigatio rerum occultissimarum. Negat enim tenuissimo victu, id est contemptissimis escis et potionibus, minorem voluptatem.

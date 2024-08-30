@@ -58,10 +58,10 @@ function Get-OpenGraphImageUrl {
         if ($ogImageUrl.Contains("https://repository-images.githubusercontent.com/")) {
             return $ogImageUrl
         } else {
-            return "/images/project-github.jpg"
+            return "/images/projects/project-github.jpg"
         }
     } else {
-        return "/images/project-github.jpg"
+        return "/images/projects/project-github.jpg"
     }
 }
 

@@ -8,8 +8,8 @@ menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
-    #- url: '/about'
-    #  title: 'About'
+    - url: '/about'
+      title: 'About'
     - title: 'Projects'
       url: '/projects/'
     #- title: 'Blog'
@@ -19,7 +19,7 @@ menu__settings:
 cta__button__text: Get in touch
 
 # Add global cover image (This field adds a background to the top and bottom of the site.)
-cover__image: '/images/project-eco-10.jpg'
+cover__image: '/images/projects/project-eco-10.jpg'
 
 
 #-------------------------------
@@ -29,7 +29,7 @@ author:
   name: Jordan Maxwell
   title: Hello I’m Jordan Maxwell
   bio: Game Developer & DevOps engineer based in Wisconsin, crafting creative and fun games for desktop and mobile. When I’m not working, I’m probably tinkering with a crazy personal project.
-  image: 'https://avatars.githubusercontent.com/u/2001527?v=4'
+  image: '/images/character-emotes/SusDrink.png'
   avatar: 'https://avatars.githubusercontent.com/u/2001527?v=4'
   button__text: See my projects
 
@@ -103,11 +103,6 @@ mailchimp__settings:
   mailchimp__identifier: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
   mailchimp__button__text: Subscribe # Add your button text
   mailchimp__enabled: false # Enable or disable the newsletter form
-
-
-#-------------------------------
-# Comment Section (Disqus)
-disqus-identifier: thetestgame # add your shortname for Disqus Comment. For example anvodstudio-demo
 
 
 #-------------------------------

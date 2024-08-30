@@ -13,9 +13,9 @@ Offal post-ironic before they sold out mixtape you probably haven't heard of the
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-5.jpg" alt="Project">
-    <img src="/images/project-8.jpg" alt="Project">
-    <img src="/images/project-6.jpg" alt="Project">
+    <img src="/images/projects/project-5.jpg" alt="Project">
+    <img src="/images/projects/project-8.jpg" alt="Project">
+    <img src="/images/projects/project-6.jpg" alt="Project">
   </div>
   <em>Gallery / <a href="https://unsplash.com/" target="_blank">Unsplash</a></em>
 </div>
