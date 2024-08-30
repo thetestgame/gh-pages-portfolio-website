@@ -1,23 +1,22 @@
 ---
 title: Minecraft
 date: '2024-02-01'
-subtitle: A sandbox game developed by Mojang Studios and originally released in 2009. The game was created by Markus "Notch" Persson in the Java programming language
-image: '/images/projects/project-minecraft-3.jpg'
+subtitle: A sandbox game developed by Mojang Studios and originally released in 2009.
+image: '/images/projects/project-minecraft-5.jpg'
 ---
 
-In qua quid est boni praeter summam voluptatem, et eam sempiternam? Cur post Tarentum ad Archytam? Qua ex cognitione facilior facta est investigatio rerum occultissimarum. Negat enim tenuissimo victu, id est contemptissimis escis et potionibus, minorem voluptatem.
+Minecraft is a 3D survival sandbox game developed and published by Mojang, spanning multiple platforms include Windows, Mac, Linux, Nintendo Switch, Playstation, Xbox, Android, and iOS.
 
 <div class="gallery-box">
   <div class="gallery">
     <img src="/images/projects/project-minecraft-1.jpg" alt="Project">
     <img src="/images/projects/project-minecraft-2.jpg" alt="Project">
     <img src="/images/projects/project-minecraft-3.jpg" alt="Project">
+    <img src="/images/projects/project-minecraft-4.jpg" alt="Project">
   </div>
   <em>Screenshots</em>
 </div>
 
-Praeteritis, inquit, gaudeo. Praeteritis, inquit, gaudeo. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. Scientiam pollicentur, quam non erat mirum sapientiae cupido patria esse cariorem. Non quaeritur autem quid naturae tuae consentaneum sit, sed quid disciplinae. Ita ne hoc quidem modo paria peccata sunt. Ita prorsus, inquam; Nunc ita separantur, ut disiuncta sint, quo nihil potest esse perversius. Virtutibus igitur rectissime mihi videris et ad consuetudinem nostrae orationis.
+Gameplay is in the first-person perspective, with the core gameplay modes being survival, in which players must acquire resources to build the world and maintain health (optionally with a "hardcore" limit, which deletes the world after the player dies); and creative, in which players have unlimited resources, no hunger and are able to fly. The game world is composed of voxels—cubes, commonly called "blocks"—representing various materials, such as dirt, stone, ores, tree trunks, water, and lava, which are arranged in a 3-dimensional grid. Gameplay revolves around picking up and placing these objects as the player pleases, while being able to move freely around the world.
 
 <p><iframe src="https://www.youtube.com/embed/MmB9b5njVbA" frameborder="0" allowfullscreen></iframe></p>
-
-Defecerit Sed isti ipsi, qui voluptate et dolore omnia metiuntur, nonne clamant sapienti plus semper adesse quod velit quam quod nolit? Quae quidem sapientes sequuntur duce natura tamquam videntes; Quod enim dissolutum sit, id esse sine sensu, quod autem sine sensu. Sunt omnia Longum est enim ad omnia respondere, quae a te dicta sunt. Nam cui proposito sit conservatio sui, necesse est huic partes quoque sui caras suo genere laudabiles servari.
