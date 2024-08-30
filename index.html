@@ -10,4 +10,6 @@ layout: default
     {% include section-testimonials.html %}
 {% endif %}
 
-{% include section-blog.html %}
+{% if site.data.settings.blog__settings.blog__section_enabled %}
+    {% include section-blog.html %}
+{% endif %}

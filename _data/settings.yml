@@ -14,6 +14,12 @@ menu__settings:
       url: '/projects/'
     #- title: 'Blog'
     #  url: '/blog/'
+    #- title: 'Services'
+    #  submenu:
+    #  - url: '/twitch-overlay'
+    #    title: 'Twitch Overlay'
+    #  - url: '/elements'
+    #    title: 'Elements'
 
 # Call to action button
 cta__button__text: Get in touch
@@ -84,7 +90,7 @@ testimonial-items:
 blog__settings:
   blog__title: Recent <span class="text-span">Blog</span> Posts # Add a 'text-span' class to highlight text.
   blog__description:
-
+  blog__section_enabled: false # Enable or disable the blog section
 
 #-------------------------------
 # Contact Settings
