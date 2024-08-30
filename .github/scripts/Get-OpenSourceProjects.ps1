@@ -80,7 +80,7 @@ function Main {
 
     # Make the API request and filter only public repositories and sort by stars
     $response = Invoke-RestMethod -Uri $apiUrl -Method Get
-    $repos = $response | Where-Object { $_.private -eq $false -and $_.fork -eq $false -and $_.archived -eq $false } | Sort-Object -Property { $_.stargazers_count } -Descending
+    $repos = $response | Where-Object { $_.private -eq $false -and $_.archived -eq $false } | Sort-Object -Property { $_.stargazers_count } -Descending
 
     # Write out our markdown files for each repository
     $repos | ForEach-Object {
