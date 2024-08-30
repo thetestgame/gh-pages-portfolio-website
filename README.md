@@ -1,4 +1,6 @@
-# Personal Website
+# Personal Portfolio
+
+<img src=".github/screenshot.png" style="border-radius:15px;">
 
 
 
