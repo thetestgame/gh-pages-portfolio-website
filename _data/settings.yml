@@ -8,8 +8,8 @@ menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
-    - url: '/about'
-      title: 'About'
+    #- url: '/about'
+    #  title: 'About'
     - title: 'Projects'
       url: '/projects/'
     #- title: 'Blog'
