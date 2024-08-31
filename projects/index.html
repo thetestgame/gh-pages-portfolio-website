@@ -43,8 +43,8 @@ description:
 
 <div class="container animate">
   <div class="row">
-    {% assign sorted_os_projects = site.os_projects | sort: 'stars' | reverse %}
-    {% for os_project in sorted_os_projects limit:9 %}
+    {% assign sorted_foss_projects = site.foss_projects | sort: 'stars' | reverse %}
+    {% for os_project in sorted_foss_projects limit:9 %}
       <article class="project col col-4 col-d-6 col-t-12">
         <div class="project__content">
           <a href="{{ os_project.link }}" class="project__image">

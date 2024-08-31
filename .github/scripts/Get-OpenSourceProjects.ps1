@@ -15,7 +15,7 @@
 # Define our constants
 $username = "thetestgame"
 $apiUrl = "https://api.github.com/users/$username/repos?per_page=100"
-$githubFolder = $PSSCriptRoot + "/../../_os_projects"
+$githubFolder = $PSSCriptRoot + "/../../_foss_projects"
 
 function Get-OpenGraphImageUrl {
     <#
