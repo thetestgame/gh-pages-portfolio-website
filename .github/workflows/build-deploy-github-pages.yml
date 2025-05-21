@@ -48,7 +48,7 @@ jobs:
       # Setup Github Pages 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v5
 
       # Run the Github projects powershell script
       - name: Collect Github projects
@@ -65,7 +65,7 @@ jobs:
       # Upload the artifact for later use
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
 
   # Deployment job
   deploy:
