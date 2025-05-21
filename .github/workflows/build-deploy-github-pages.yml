@@ -67,9 +67,6 @@ jobs:
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v1
 
-      # Keep the workflow alive
-      - uses: gautamkrishnar/keepalive-workflow@v1 # using the workflow with default settings
-
   # Deployment job
   deploy:
     environment:
